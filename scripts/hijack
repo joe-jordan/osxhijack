@@ -1,0 +1,10 @@
+#! /usr/bin/python
+
+import hijack, sys
+
+if __name__ == "__main__":
+  if len(sys.argv) < 2:
+    print "please enter a command to pass to the terminal window."
+    exit(1)
+  arg = ' '.join(sys.argv[1:])
+  hijack.terminal(arg)
